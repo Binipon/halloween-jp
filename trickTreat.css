@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mystery Quest', cursive;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+
+  
+
+.yum {
+  font-size: 30px;
+  text-shadow: 4px 4px 10px red;
+  color: yellow;
+}
+
+.sweetPic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.jackWelcome {
+  font-size: 30px;
+  text-shadow: 4px 4px 10px red;
+  color: #fff;
+}
+
+.trickPic {
+  width: 100%;
+  height: 100%;
+  animation: zoom 1s;
+  
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(2);
+  }
+  /* 80% {
+    transform: scale(2);
+  } */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* a {
+  user-select: none;
+} */
+
+.btn-trick {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 30px;
+  margin-top: 20px;
+  background: red;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-treat {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 20px;
+  margin-top: 20px;
+  background: yellow;
+  border-radius: 16px;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+

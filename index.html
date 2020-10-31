@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- https://developers.google.com/speed/libraries のlibrariesから持ってきた -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
+
+<!-- 新バージョンのブートストラップ。動かない。 -->
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+
+<!-- youtubeの講義から貼り付けたもの -->
+<!-- 一番上はブートストラップのページからの貼り付け -->
+<!-- ２番めはhttps://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"から のもの-->
+<!-- 最後はfontAwesome -->
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+ 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+
+</head>
+<body>
+<!-- navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand " href="#"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="tour.html" class="nav-link">TOURS</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+    <li data-target="#slides" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/background1.jpg">
+      <div class="carousel-caption">
+        <h1 class="display-2">Halloween</h1>
+        <h3>Trick or Treat?</h3>
+        <a href="trick.html" ><button type="button" class="btn btn-outline-dark btn-lg" id="trick">TRICK</button></a>
+        <a href="treat.html"><button type="button" class="btn btn-secondary btn-lg">TREAT</button></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/background2.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="img/background3.jpg">
+    </div>
+  </div>
+</div>
+
+        
+      
+
+<!-- Jumbotron -->
+<div class="container-fluid">
+<div class="row jumbotron">
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+   <p class="lead">This is Halloween.This is Halloween! Halloween! Halloween! Halloween!</p>
+  </div>
+  <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+    <a href="#"><button type="button" class="btn btn-outline-dark btn-lg">Halloween Web</button></a>
+  </div> -->
+</div>
+</div>
+
+<!-- Welcome Section -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12 ">
+        <h1 class="display-4 ">ハロウィンツアー</h1>
+      </div>
+      <hr>
+      <div class="col-12 ">
+        <p class="lead">
+          不思議なハロウィンツアーはこの3つ・・・
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Three Column Section -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+  <div class="col-xs-12 col-sm-6 col-md-4 ">
+    <i class="fas fa-ghost"></i>
+    <h3>ゴーストツアー</h3>
+    <p class="lead">天国で遊ぶツアー(三途の川クルーズ付き)</p>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <i class="fas fa-broom"></i>
+    <h3>ほうきツアー</h3>
+    <p class="lead">ほうきで空を飛ぶツアー</p>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <i class="fas fa-hat-wizard
+    "></i>
+    <h3>魔法使いツアー</h3>
+    <p class="lead">9 3/4ホームから魔法の国へ行くツアー</p>
+  </div>
+</div> 
+<hr class="my-4">
+</div>
+
+<!-- Two column Section -->
+<div class="container-fluid padding">
+<div class="row padding">
+  <div class="col-lg-6">
+    <h2 class="mb-4">ツアーは年に１度だけ...</h2>
+    <p>スリル満点の大冒険と不気味なトリック、風変わりなスイーツがお待ちしております・・・</p>
+    
+
+    <br>
+    <a href="tour.html" class="btn btn-secondary mb-4">ツアーを見学</a>
+  </div>
+  <div class="col-lg-6">
+    <img src="img/tour.jpg" class="img-fluid">
+  </div>
+</div>  
+</div>
+
+<hr class="my-4">
+
+<!-- fixed background -->
+<figure>
+  <div class="fixed-wrap">
+    <div id="fixed">
+     
+    </div>
+  </div>
+</figure>
+
+<!-- Emoji Section -->
+<button class="fun btn btn-secondary" data-toggle="collapse" data-target="#emoji">ここをクリック！！！</button>
+<div id="emoji" class="collapse">
+  <div class="container-fluid padding">
+  <div class="row text-center">
+    
+    
+    <div class="col-md-6 col-lg-3 mb-2">
+      <img class="gif" src="img/gif/pumpkindog.gif">
+    </div>
+    <div class="col-md-6 col-lg-3 mb-2">
+      <img class="gif" src="img/gif/grumpycat.gif">
+    </div>
+    <div class="col-md-6 col-lg-3 mb-2">
+      <img class="gif" src="img/gif/jack.gif">
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <img class="gif" src="img/gif/dog1.gif">
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- Meet the team -->
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4">ツアーガイド</h1>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<!-- Cards -->
+<div class="container-fluid padding">
+<div class="row padding">
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img/cast2.jpg" class="card-img-top" id="jackHome">
+      <div class="card-body">
+        <h4 class="card-title" >ジャック</h4>
+        <p>ハロウィン王国に住むパンプキンの王様。<br>ゴーストツアー担当です。</p>
+        <a href="guids.html#jack" class="btn btn-outline-dark">See Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img/cast1.jpg" class="card-img-top" id="pukkaHome">
+      <div class="card-body">
+        <h4 class="card-title" >プッカ</h4>
+        <p>クリスマスタウンに住むおしゃべりなペンギン。<br>魔法使いツアー担当です。</p>
+        <a href="guids.html#pukka" class="btn btn-outline-dark">See Profile</a>
+      </div>
+    </div>
+  </div>
+ 
+  
+  
+  <div class="col-md-4">
+    <div class="card">
+      <img src="img/cast3.jpg" class="card-img-top" id="cookieHome">
+      <div class="card-body">
+        <h4 class="card-title" >クッキー</h4>
+        <p>どうぶつの森に住む冒険好きの子犬。<br>ほうきツアー担当です。</p>
+        <a href="guids.html#cookie" class="btn btn-outline-dark">See Profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Two Column Section -->
+<div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-lg-6">
+      <h2 class="mb-4">怖すぎる!?</h2>
+      <p><span class="display-4">大丈夫！</span></p>
+      <p> ツアーガイドたちはトップクラスの魔法使い。悪霊は寄り付くことさえできません。</p>
+      <p>もちろん...現実の世界に戻ってこれ...るはず。</p>
+      
+      <br>
+    </div>
+    <div class="col-lg-6">
+      <img src="img/center.jpg" class="img-fluid">
+    </div>
+  </div> 
+    <hr class="my-4"> 
+  </div>
+
+  <!-- connect -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2 id="contact" class="mb-4">Connect</h2>
+      </div>
+      <div class="col-12 social padding" >
+        <a href="#contact"><i class="fab fa-facebook-square"></i></a>
+        <a href="#contact"><i class="fab fa-twitter"></i></a>
+        <a href="#contact"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#contact"><i class="fab fa-instagram"></i></a>
+        <a href="#contact"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+<footer>
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="img/footerLogo.png">
+        <hr class="light">
+        <p>123-456-789</p>
+        <p>halloween@pumpkin.com</p>
+        <p>3110 Halloween St</p>
+        <p>Pumpkin,BOO,1031</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Our Hours</h5>
+        <hr class="light">
+        <p>Halloween Day Only</p>
+        <p>All day</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Searvice Area</h5>
+        <hr class="light">
+        <p>All over the world</p>
+      </div>
+      <div class="col-12">
+        <hr class="light-100">
+        <p>&copy:HalloweenPumpkinGhostAnimal.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery and JS bundle w/ Popper.js なしでも動く -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

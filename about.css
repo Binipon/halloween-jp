@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Mystery+Quest&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family:'M PLUS Rounded 1c', sans-serif;
+  background: linear-gradient(#2d0080, white);
+  color: #cc9d14;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 30px #8a29fa;
+  animation: fly .6s .6s;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-500px, 0);
+  }
+
+  /* 80% {
+    transform: translate(100%, 100%);
+  } */
+  
+  100% {
+    transform: translate(0);
+  }
+  
+  }
+
+  .btn-secondary {
+    background: #cc9d14;;
+  }
+  .btn-outline-dark {
+    border:2px solid #8a29fa;
+    color: #222;
+}
+    
+  /* Media Queries */
+
+@media (max-width: 992px) {
+  
+  .btn-outline-dark {
+    border:2px solid #cc9d14;;
+    color: #fff;
+}
+}
+@media (max-width: 768px) {
+  .btn-outline-dark {
+    border:2px solid #cc9d14;;
+    color: #fff;
+  }
+
+}
+@media (max-width: 576px) {
+  .btn-outline-dark {
+    border:2px solid #cc9d14;;
+    color: #fff;
+  }
+  }
+
+
+  /*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+    
+
